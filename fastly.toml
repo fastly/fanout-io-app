@@ -1,0 +1,11 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["<oss@fastly.com>"]
+description = "Implements Fanout.io realm behavior on Fastly Compute."
+language = "rust"
+manifest_version = 2
+name = "fanout-io"
+
+[scripts]
+  build = "cargo build --bin fanout-io-fastly-app --release --target wasm32-wasi --color always"

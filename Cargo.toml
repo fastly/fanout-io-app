@@ -1,0 +1,11 @@
+[package]
+name = "fanout-io-fastly-app"
+version = "1.0.0"
+edition = "2021"
+publish = false
+
+[profile.release]
+debug = 1
+
+[dependencies]
+fastly = "0.10"
